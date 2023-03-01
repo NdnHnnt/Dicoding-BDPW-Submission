@@ -1,0 +1,697 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Mukta&display=swap');
+
+* {
+    font-family: 'Mukta', sans-serif;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    background-color: #DCD7C9;
+}
+
+/* ------------------------- */
+/* Navigation: Navbar & List */
+/* ------------------------- */
+.navigation {
+    background-color: #DCD7C9;
+    color: #2C3639;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 18px;
+}
+
+.primary-icon{
+    height: 45px;
+}
+
+.nav-list{
+    list-style-type: none;
+}
+
+.nav-list .list-item{
+    display: inline-block;
+    padding: 20px 7px;
+}
+
+.navigation a{
+    color: #2C3639;
+}
+
+.navigation a:hover{
+    color: #A27B5C;
+}
+
+.menu{
+    display: none;
+}
+
+.menu-line{
+    width: 20px;
+    height: 3px;
+    background-color: #2C3639;
+    margin-bottom: 4px;
+}
+
+/* ----------------------- */
+/* Body *                  */
+/* ----------------------- */
+.subtitle{
+  font-size: 40px;
+  color: #2C3639;
+}
+
+/* ----------------------- */
+/* Body #1: Intro about Web*/
+/* ----------------------- */
+.intro {
+    background-image: linear-gradient(rgba(63, 78, 79, 0.9), rgba(63, 78, 79, 0.9)), url('/media/photo/gyudonay.jpg');
+    background-position: center;
+    background-size: 100%;
+    color: #DCD7C9;
+    display: inline-flex;
+    flex-direction:column;
+    justify-content: center;
+    height: 350px;
+    width: 100%;
+    padding: 2rem 2rem;
+}
+
+.intro .intro-a a{
+    border-radius: 999px;
+    margin: 10px;
+    padding: 1rem 1rem;
+} 
+
+.intro h1{
+    margin-bottom: 20px;
+    padding: 1rem 1rem;
+    color: #DCD7C9;
+    display: flex;
+    align-items: center;
+}
+
+/* -------------------------- */
+/* Body #2: About Halan-halan */
+/* -------------------------- */
+main {
+  margin-inline: auto;
+  padding: 2rem 4rem;
+  flex: 1;
+  color: #2C3639;
+  display: flex;
+  align-items: center;
+}
+ 
+main .content {
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+ 
+main .content .content-description {
+  flex: 1 1;
+}
+ 
+main .content .content-description .title {
+  font-size: 40px;
+  margin-block: 1rem;
+}
+ 
+main .content .content-description p {
+  line-height: 1.7rem;
+  font-size: 15px;
+  padding-bottom: 1rem;
+}
+ 
+main .content .content-description button {
+  padding: .8rem 2.5rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 1rem;
+  font-family: 'Quicksand', sans-serif;
+  color: white;
+ 
+  border: 3px solid transparent;
+  border-radius: 999px;
+  background-color: #2C3639;
+  cursor: pointer;
+  transition: all .15s ease-in;
+}
+ 
+main .content .content-description button:hover {
+  border: 3px solid #2D3E50;
+  color: #2D3E50;
+  background-color: transparent;
+}
+ 
+main .content .content-image {
+  flex: 1;
+  display: flex;
+}
+ 
+main .content .content-image img {
+  margin: auto;
+  min-width: 300px;
+  width: 300px;
+}
+
+/* -------------------------- */
+/* Body #3: Artikel (Carousel)*/
+/* -------------------------- */
+.carousel {
+  margin: 0 auto;
+  overflow: hidden;
+  text-align: center;
+}
+
+.slides {
+  width: 100%;
+  display: flex;
+  overflow-x: scroll;
+  scrollbar-width: none;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+}
+
+.slides::-webkit-scrollbar {
+  display: none;
+}
+
+.slides-item {
+  align-items:center;
+  border-radius: 0;
+  flex-direction: column;
+  display: flex;
+  flex-shrink: 0;
+  justify-content: flex-start;
+  margin: 0 0;
+  position: relative;
+  scroll-snap-align: start;
+  transform: scale(1);
+  transform-origin: center center;
+  transition: transform .5s;
+  width: 100%;
+}
+
+div.slide-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+a{
+  color: #A27B5C;
+}
+
+.slide-image-1{
+  height: 300px;
+  width: 100%;
+  background: url("/media/photo/gyudonay.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.slide-image-2{
+  height: 300px;
+  width: 100%;
+  background: url("/media/photo/tunjungan.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.slide-image-3{
+  height: 300px;
+  width: 100%;
+  background: url("/media/photo/communal_coffee.jpeg");
+  background-position: center;
+  background-size: cover;
+}
+
+.slide-image-4{
+  height: 300px;
+  width: 100%;
+  background: url("/media/photo/food-junction.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.slide-image-5{
+  height: 300px;
+  width: 100%;
+  background: url("/media/photo/suramadu.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+
+.carousel__nav {
+  padding: 1.25rem .5rem;
+}
+
+.slider-nav {
+  align-items: center;
+  background-color: #A27B5C;
+  border-radius: 50%;
+  color: #DCD7C9;
+  display: inline-flex;
+  height: 1.5rem;
+  justify-content: center;
+  padding: .5rem;
+  position: relative;
+  text-decoration: none;
+  width: 1.5rem;
+}
+
+.slider-nav:hover,
+.slider-nav:active {
+  background-color: #2C3639;
+  color: #DCD7C9;
+}
+
+.slide-1 {
+  background-color: #2C3639;
+  color: #dca;
+}
+
+.slide-2 {
+  background-color: #2D3E50;
+  color: #dca;
+}
+
+.slide-3 {
+  background-color: #2C3639;
+  color: #dca;
+}
+
+.slide-4 {
+  background-color: #2D3E50;
+  color: #dca;
+}
+
+.slide-5 {
+  background-color: #2C3639;
+  color: #dca;
+}
+
+.carousel__skip-link {
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  top: auto;
+  width: 1px;
+}
+
+.carousel__skip-link:focus {
+  align-items: center;
+  background-color: #000;
+  color: #fff;
+  display: flex;
+  font-size: 30px;
+  height: 680px;
+  justify-content: center;
+  opacity: .8;
+  text-decoration: none;
+  width: 100%;
+  z-index: 1;
+}
+
+h1 {
+  font-weight: 600;
+  font-size: 36px;
+  margin: 0 0;
+}
+
+p {
+  font-weight: 300;
+  line-height: 24px;
+  margin: 0 0 0 0;
+}
+
+
+/* ----------------------- */
+/* Body #4: Saran + Aside  */
+/* ----------------------- */
+.body-4{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+
+/* ----------------------- */
+/* Body #4-1: Saran         */
+/* ----------------------- */
+.saran{
+	position: relative;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 20px 100px;
+}
+
+.saran:after{
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+	background: url("media/photo/gyudonay.jpg") no-repeat center;
+	background-size: cover;
+	filter: blur(50px);
+	z-index: -1;
+}
+.contact-box{
+	max-width: 850px;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	background-color: #fff;
+}
+
+.left{
+	background: url("/media/photo/where-to.jpg") no-repeat center;
+	background-size: cover;
+	height: 100%;
+}
+
+.right{
+	padding: 25px 40px;
+}
+
+h2{
+	position: relative;
+	padding: 0 0 10px;
+	margin-bottom: 10px;
+}
+
+h2:after{
+	content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    height: 4px;
+    width: 50px;
+    border-radius: 2px;
+    background-color: #2C3639;
+}
+
+.field{
+	width: 100%;
+	border: 2px solid rgba(0, 0, 0, 0);
+	outline: none;
+	background-color: #DCD7C9;
+	padding: 0.5rem 1rem;
+	font-size: 1.1rem;
+	margin-bottom: 22px;
+	transition: .3s;
+}
+
+.field:hover{
+	background-color: rgba(0, 0, 0, 0.1);
+}
+
+textarea{
+	min-height: 150px;
+}
+
+.btn{
+	width: 100%;
+	padding: 0.5rem 0.5rem;
+	background-color: #2C3639;
+	color: #fff;
+	font-size: 1.1rem;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	transition: .3s;
+}
+
+.btn:hover{
+    background-color: #A27B5C;
+}
+
+.field:focus{
+    border: 2px solid rgba(30,85,250,0.47);
+    background-color: #fff;
+}
+
+/* ------------------ */
+/* Body #4-2: bio */
+/* ------------------ */
+aside {
+  background-color: #A27B5C;
+  color: #2C3639;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  padding: 1rem 1rem;
+  text-align: center;
+
+}
+
+h1.bio_name{
+  color: #2C3639;
+}
+
+.bio_bio {
+  color :#DCD7C9;
+  font-size: 15px;
+}
+
+.bio_image{
+  width: 200px;
+  height: 250px;
+}
+
+/* ------ */
+/* Footer */
+/* ------ */
+footer {
+    align-items: center;
+    background-color: #2C3639;
+    color: #DCD7C9;
+    padding: 20px;
+    position: inherit;
+    text-align: center;
+  }
+
+.c .social-media-icons {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: right;
+    align-items: center;
+  }
+  
+  .social-media-icons li {
+    display: inline-block;
+    margin: 0 10px;
+  }
+  
+  .social-media-icons li a {
+    color: #DCD7C9;
+    font-size: 20px;
+  }
+  
+  .social-media-icons li a:hover {
+    color: #A27B5C;
+  }
+  
+
+/* ------- */
+/* Button! */
+/* ------- */
+.btn-1{
+    border-style: solid;
+    border-color: #A27B5C;
+    background-color: #A27B5C;
+    color: #DCD7C9;
+    font-weight: bold;
+}
+
+.btn-2{
+    border-style: solid;
+    border-color: #DCD7C9;
+    color: #DCD7C9;
+    font-weight: bold;
+}
+
+/* ================== */
+/* Media + Responsive */
+/* ================== */
+
+@media screen and (max-width: 880px){
+  /* --------------- */
+  /* Saran  Resp     */
+  /* --------------- */
+	.saran{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 50px;
+  }
+  .contact-box{
+		grid-template-columns: 1fr;
+	}
+	.left{
+		height: 200px;
+	}
+}
+
+@media (max-width: 767px) {
+
+  /* --------------- */
+  /* Footer Resp     */
+  /* --------------- */
+  .social-media-icons {
+    text-align: center;
+    margin-top: 10px;
+  }
+  
+  .social-media-icons li {
+    margin: 0 5px;
+  }
+
+  /* --------------- */
+  /* About Resp      */
+  /* --------------- */
+  main {
+    margin: 1rem 1rem;
+    padding: 0;
+  }
+ 
+  main .content {
+    text-align: center;
+    flex-direction: column;
+  }
+ 
+  main .content .content-description .title {
+    display: none;
+  }
+ 
+  main .content .content-description p {
+    font-size: 0.8rem;
+  }
+ 
+  main .content .content-image {
+    order: -1;
+  }
+  main .content .content-image img{
+    min-width: 200px;
+    width: 200px;
+  }
+
+}
+
+@media all and (max-width: 590px){
+
+  /* --------------- */
+  /* Navigation Resp */
+  /* --------------- */
+    .navigation{
+        flex-direction: column;
+        font-size: 15px;
+    }
+
+    .nav-list{
+        display: none;
+        list-style-type: none;
+        width: 100%;
+        text-align: center;
+        padding-top: 10px;
+    }
+
+    .nav-list .list-item {
+        display: block;
+        padding: 10px;
+        border-top: 1px solid #2C3639;
+        border-width: thin;
+    }
+    .menu{
+        display: block;
+        position: absolute;
+        right: 15px;
+        top: 15px;
+    }
+    .icon-container{
+        width: 100%;
+    }
+    .primary-icon{
+        height: 45px;
+        margin-left: 10px;
+        margin-top: 10px;
+    }
+
+    .active{
+      display: block;
+    }
+
+  /* ---------------- */
+  /* Hero Button Resp */
+  /* ---------------- */
+    .intro h1{
+        font-size: 20px;
+    }
+
+    .intro .intro-a{
+        display:inline-flex;
+        flex-direction: column;
+    }
+
+    .intro .intro-a a{
+        font-size: 10px;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+}
+
+@media screen and (min-width: 780px) {
+  /* ---------------- */
+  /* Carousel Resp    */
+  /* ---------------- */
+  div.card-image {
+    height: 420px;
+    min-width: 360px;
+  }
+ div.text-container {
+    margin: 0 60px;
+    max-width: 660px;
+  }
+  div.slide-image {
+    height: 300px;
+    min-width: 350px;
+  }
+ div.text-container {
+    margin: 0 60px;
+    max-width: 660px;
+  }
+  div.card-container {
+    flex-direction: row;
+    width: 100%;
+  }
+
+  div.slides-item {
+    flex-direction: row;
+    width: 100%;
+  }
+}
+
