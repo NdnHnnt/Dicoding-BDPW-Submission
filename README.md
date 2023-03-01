@@ -1,4 +1,4 @@
-# DicodingSubmission_BDWP
+# DicodingSubmission_BDPW
 The contents of this repository document my efforts during the completion of the "Belajar Dasar Pemrograman Web" course offered by Dicoding. The end product of this course is a landing page which was created using Native CSS and JavaScript.
 
 # Web Description
